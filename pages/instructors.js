@@ -1,9 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Nav from '../components/nav'
 import styles from '../sass/layouts/instructors.module.scss'
 
 function Instructors() {
   return (
+    <>
+    <Nav/>
     <div className={styles.wraper}>
         <div className={styles.container}>
             <section className={styles.categories}>
@@ -65,6 +68,7 @@ function Instructors() {
             </section>
         </div>
     </div>
+    </>
   )
 }
 

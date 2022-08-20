@@ -5,6 +5,8 @@ import styles from '../sass/layouts/home.module.scss'
 
 function Home() {
   return (
+    <>
+    <Nav/>
     <div className={styles._wraper}>
       <div className={styles.container}>
         <div className={styles.hero}>
@@ -235,6 +237,7 @@ function Home() {
         </section>
       </div>
     </div>
+    </>
   )
 }
 
