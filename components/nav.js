@@ -39,7 +39,7 @@ function Nav() {
 
                             <Link href='/events'><a>EVENTS</a></Link>
 
-                            <Link href='about'><a>ABOUT</a></Link>
+                            <Link href='/about'><a>ABOUT</a></Link>
                         </ul>
                     </div>
                     <div className={styles.navigation_two}>
@@ -74,7 +74,7 @@ function Nav() {
                             <Link href='/instructors'><a>INSTRUCTORS</a></Link>
                             <Link href='/categories'><a>CATEGORIES</a></Link>
                             <Link href='/events'><a>EVENTS</a></Link>
-                            <Link href='about'><a>ABOUT</a></Link>
+                            <Link href='/about'><a>ABOUT</a></Link>
                         </ul>
                         <div className={styles.menu_list_two} >
                             <div><input></input></div>
