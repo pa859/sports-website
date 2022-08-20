@@ -1,0 +1,236 @@
+._wraper {
+    padding: 1.5em 5% 0 5%;
+    background-color: #181818;
+}
+
+.menu {
+    z-index: 999;
+    display: block;
+    transition: left 0.2s cubic-bezier(.17,.67,.66,1.05);
+}
+
+.menu[show='false'] {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    position: fixed;
+    padding-inline: 5%;
+    top: 0;
+    left: 100vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+}
+
+.menu[show='true'] {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    position: fixed;
+    padding-inline: 5%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.menu_container {
+    & .menu_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+        & button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+        }
+    }
+}
+
+.menu_list_one {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &>a + a {
+        margin-top: 1em;
+    }
+
+    & a {
+        /* Instructors */
+        font-family: 'Lato';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 179%;
+        /* identical to box height, or 179% */
+
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.menu_list_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    & input {
+        width: 20.625rem;
+        height: 2.75rem;
+        border: none;
+
+        background: #FFFFFF;
+        border-radius: 624.9375rem;
+    }
+
+    & button {
+        /* Instructors */
+        margin-top: 1em;
+        font-family: 'Lato';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 179%;
+        /* identical to box height, or 179% */
+        background-color: transparent;
+        border: none;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    width: 9.0625rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.navigation_one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navigation_list_one {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &>a + a {
+        margin-left: 2em;
+    }
+
+    & a {
+        /* Instructors */
+        font-family: 'Lato';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        line-height: 179%;
+        /* identical to box height, or 179% */
+
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.navigation_two {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+.navigation_list_two {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+
+    & input {
+        width: calc(20vw + 1.5rem);
+        min-width: 0px;
+        height: 2.75rem;
+        border: none;
+        resize: horizontal;
+
+        background: #FFFFFF;
+        border-radius: 624.9375rem;
+    }
+
+    & button {
+        /* Instructors */
+        margin-left: 1em;
+        font-family: 'Lato';
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8125rem;
+        line-height: 179%;
+        /* identical to box height, or 179% */
+        background-color: transparent;
+        border: none;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.navigation_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & button {
+        padding: 0;
+        background: transparent;
+        border: none;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .navigation_list_one, .navigation_list_two {
+        display: flex;
+    }
+
+    .navigation_button {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
