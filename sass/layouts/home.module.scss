@@ -255,19 +255,18 @@
     }
 
     & .list:last-child {
-        &>button + button {
+
+        & button:last-child {
             margin-top: 1em;
         }
 
         & button {
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 120%;
             background-color: transparent;
             /* identical to box height, or 120% */
             text-align: center;
             color: #FFFFFF;
             border: 2px solid #FFFFFF;
+            font-size: 0.8125rem;
             border-radius: 4px;
             padding: 0.7em;
         }
@@ -379,12 +378,10 @@
             'one two'
             'four three'
             'five six';
-
             & .card:nth-child(2), .card:nth-child(3), .card:nth-of-type(5) {
                 display: flex;
                 justify-content: flex-end;
             }
-      
     }
 
     .footer_top {

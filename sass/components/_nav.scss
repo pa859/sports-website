@@ -62,7 +62,7 @@
     flex-wrap: nowrap;
 
     &>a + a {
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
 
     & a {
@@ -87,7 +87,7 @@
     align-items: center;
     margin-top: 2em;
     & input {
-        width: 20.625rem;
+        width: 60vw;
         height: 2.75rem;
         border: none;
 
