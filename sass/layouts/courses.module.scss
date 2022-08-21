@@ -1,0 +1,37 @@
+._wraper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-inline-end: 5%;
+}
+
+.instructor {
+    display: flex;
+    flex-direction: column;
+}
+
+.instructor_left {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructor_left_top {
+    max-width: 407px;
+
+    & img {
+        max-width: 407px;
+        border-radius: 8px;
+    }
+
+    & .instructor_left_top_tag>p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.1875rem;
+        line-height: 121%;
+        /* or 121% */
+        color: #FFFFFF;
+    }
+}

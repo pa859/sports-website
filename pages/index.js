@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import Nav from '../components/nav'
 import styles from '../sass/layouts/home.module.scss'
 
 function Home() {
