@@ -6,14 +6,14 @@ import styles from '../sass/layouts/courses.module.scss'
 function Course() {
   return (
     <>
-      <Nav/>
+      <Nav />
       <div className={styles._wraper}>
         <div className={styles.container}>
           <section className={styles.instructor}>
             <div className={styles.instructor_left}>
               <div>
                 <div className={styles.instructor_left_top}>
-                  <Image src='/images/IMAGEin1.png' height={407} width={407} style={{height: "auto"}}/>
+                  <Image src='/images/IMAGEin1.png' height={407} width={407} style={{ height: "auto" }} />
                 </div>
                 <div className={styles.instructor_left_top_tag}><p>Tags</p></div>
                 <div>
@@ -24,7 +24,7 @@ function Course() {
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
             <div className={styles.instructor_right}>
               <div>
                 <div><h1>Michael Phelps</h1></div>
@@ -42,7 +42,7 @@ function Course() {
                 </div>
               </div>
             </div>
- 
+
           </section>
         </div>
       </div>

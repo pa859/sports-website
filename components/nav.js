@@ -16,7 +16,7 @@ function Nav() {
             <div className={styles.container}>
                 <div className={styles.navigation}>
                     <div className={styles.navigation_one}>
-                        <div className={styles.logo}>
+                        <div className={styles.logo} onClick={()=>{router.push('/')}}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 96 96"><switch><g><path fill='#181818' d="M12 28h72a4 4 0 0 0 0-8H12a4 4 0 0 0 0 8zm72 16H12a4 4 0 0 0 0 8h72a4 4 0 0 0 0-8zm0 24H12a4 4 0 0 0 0 8h72a4 4 0 0 0 0-8z" /></g></switch></svg>
                         </div>
                         <ul className={styles.navigation_list_one}>
