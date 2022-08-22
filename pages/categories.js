@@ -38,36 +38,44 @@ function Categories() {
                                         </div>
                                     </a>
                                 </Link>
-                                <div className={styles._instructor}>
-                                    <div className={styles._instructor_left}>
-                                        <Image src="/images/in1.png" width={130} height={200} style={{ height: "auto" }} layout='fixed'/>
-                                    </div>
-                                    <div className={styles._instructor_right}>
-                                        <div className={styles._instructor_right_one}>
-                                            <p>Michael Phelps</p>
-                                            <p>Team USA Swimmer</p>
+                                <Link href='/course'>
+                                    <a>
+                                         <div className={styles._instructor}>
+                                            <div className={styles._instructor_left}>
+                                                <Image src="/images/in1.png" width={130} height={200} style={{ height: "auto" }} />
+                                            </div>
+                                            <div className={styles._instructor_right}>
+                                                <div className={styles._instructor_right_one}>
+                                                    <p>Michael Phelps</p>
+                                                    <p>Team USA Swimmer</p>
+                                                </div>
+                                                <div className={styles._instructor_right_two}>
+                                                    <p>From: $89</p>
+                                                    <p>Course</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className={styles._instructor_right_two}>
-                                            <p>From: $89</p>
-                                            <p>Course</p>
+                                    </a>
+                                </Link>
+                                <Link href='/course'>
+                                    <a>
+                                         <div className={styles._instructor}>
+                                            <div className={styles._instructor_left}>
+                                                <Image src="/images/in1.png" width={130} height={200} style={{ height: "auto" }} />
+                                            </div>
+                                            <div className={styles._instructor_right}>
+                                                <div className={styles._instructor_right_one}>
+                                                    <p>Michael Phelps</p>
+                                                    <p>Team USA Swimmer</p>
+                                                </div>
+                                                <div className={styles._instructor_right_two}>
+                                                    <p>From: $89</p>
+                                                    <p>Course</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className={styles._instructor}>
-                                    <div className={styles._instructor_left}>
-                                        <Image src="/images/in1.png" width={130} height={200} style={{ height: "auto" }} />
-                                    </div>
-                                    <div className={styles._instructor_right}>
-                                        <div className={styles._instructor_right_one}>
-                                            <p>Michael Phelps</p>
-                                            <p>Team USA Swimmer</p>
-                                        </div>
-                                        <div className={styles._instructor_right_two}>
-                                            <p>From: $89</p>
-                                            <p>Course</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </section>

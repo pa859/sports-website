@@ -1,13 +1,15 @@
 // import App from 'next/app'
 import '../sass/styles.scss'
 import Nav from '../components/nav'
+import Footer from '../components/footer'
 
 function MyApp({ Component, pageProps }) {
     return (
-    <>
+    <div>
       {/* <Nav/> */}
       <Component {...pageProps} />
-    </>
+      <Footer/>
+    </div>
     )
   }
   
